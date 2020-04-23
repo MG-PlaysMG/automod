@@ -26,6 +26,6 @@ async def on_message(message):
         if message.content.count(word) > 0:
             await message.channel.purge(limit=1)
             await message.channel.send(f"Please dont say that! {message.author.mention} YOU HAVE BEEN WARNED !warn {message.author.mention}")
-            await message.channel.send(f"!warn {message.author.mention}")
+            await message.channel.send(f"!warn {message.author.mention} bad words")
 
 bot.run('NzAyNjU4Mzg0MDQ1OTMyNjM0.XqDQLA.2vqLMpsxTBjYH-EWTPBL9ac9_A0')
